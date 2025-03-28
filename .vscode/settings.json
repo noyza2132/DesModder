@@ -2,5 +2,8 @@
   "files.associations": {
     "*.replacements": "markdown"
   },
-  "typescript.tsdk": "node_modules/typescript/lib"
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "prettier.prettierPath": "./node_modules/prettier",
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode"
 }
