@@ -1,5 +1,6 @@
 /* eslint-disable @typescript-eslint/method-signature-style, @typescript-eslint/dot-notation */
 import DSM from "#DSM";
+import ChangeUsername from "./change-username";
 import GLesmos from "./GLesmos";
 import BetterEvaluationView from "./better-evaluation-view";
 import BuiltinSettings from "./builtin-settings";
@@ -149,6 +150,7 @@ export const keyToPlugin = {
   syntaxHighlighting: SyntaxHighlighting,
   betterNavigation: BetterNavigation,
   pasteImage: PasteImage,
+  changeUsername: ChangeUsername,
 } satisfies Record<string, Plugin<any>>;
 
 export const pluginList = Object.values(keyToPlugin);
@@ -204,6 +206,7 @@ export class TransparentPlugins implements KeyToPluginInstance {
   get syntaxHighlighting () { return this.ep["syntax-highlighting"]}
   get betterNavigation () { return this.ep["better-navigation"]} 
   get pasteImage () { return this.ep["paste-image"]; }
+  get changeUsername () {return this.ep["change-username"];}
 }
 
 export type IDToPluginSettings = {

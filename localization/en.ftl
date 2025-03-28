@@ -360,3 +360,7 @@ paste-image-name = Paste Image
 paste-image-desc = Lets you paste image files to import them at once.
 paste-image-error-images-not-enabled = Image insertion is not enabled for this graph.
 paste-image-error-another-upload-in-progress = Retry after another upload in progress is completed.
+
+## Change Username
+change-username-name = Change Username
+change-username-desc = Renames the displayed username in the top-right
